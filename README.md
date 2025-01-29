@@ -1,6 +1,6 @@
 <table>
   <tr>
-    <td><img src="google-assistant/assets/images/google-assistant0.png" alt="Google Assistant Logo" width="200"></td>
+    <td><img src="google-assistant/assets/images/google-assistant0.png" alt="Google Assistant Logo" width="120"></td>
     <td>
       <h1 style="margin: 0;color: brown;">Google Assistant</h1>
       <h3 style="margin: 0;">Bringing you a world of possibilities at your fingertips</h3>
