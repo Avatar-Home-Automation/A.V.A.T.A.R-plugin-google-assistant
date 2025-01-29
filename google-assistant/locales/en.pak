@@ -1,0 +1,20 @@
+{
+	"error": {
+		"credential": "google-assistant: The Credentials file doesn't exist, check the documentation... Exit.",
+		"token": "google-assistant: The Tokens file doesn't exist, check the documentation... Exit.",
+		"config": "Google Assistant configuration not exists. Unable to continue.",
+		"pak": "No language pack available. first, add a language pack for the current language.",
+		"conversation": "Conversation Error: $$",
+		"charCode": "The upper half-code is not followed by a lower half-code in fixedCharCodeAt()",
+		"noResponse": "Open the Plugin Studio and add a sentence to the 'noResponse' property for the language $$.",
+		"noAskmeResponse": "Open the Plugin Studio and add a sentence to the 'noAskmeResponse' property for the language $$.",
+		"AskmeResponse": "Open the Plugin Studio and add the phrases to the 'AskmeResponse' property for the language $$.",
+		"noSpeechPlugin": "google-assistant: Add the plugin that overrides the dialog in the 'speechPlugin' property"
+	},
+	"assistant": {
+		"answer": "Answer from assistant: $$",
+		"continue": "The conversation continues...",
+		"waiting": "Waiting $$ seconds for the answer"
+	
+	}
+}

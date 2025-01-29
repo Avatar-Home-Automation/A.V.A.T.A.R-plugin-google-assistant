@@ -1,0 +1,93 @@
+site_name: Google-Assistant
+nav:
+  - Home : index.md
+  - 'Installation': 
+    - 'Introduction': introduction.md
+    - '1. Create a project': create-google-project.md
+    - '2. Add Google Assistant API': google-assistant-API.md
+    - '3. Create Credentials': credentials.md
+    - '4. OAuth consent': OAuth-consent.md
+    - '5. Activity-related commands': activity-related-commands.md
+    - '6. Register a device': register-device.md
+    - '7. Grant access to Google-assistant': copy-files.md
+    - '8. Installation test': installation-test.md
+  - 'Get started':
+    - 'Concepts': concepts.md
+    - 'Actions & Commands': commands.md
+    - 'Customization': 
+      - 'Supported languages': supported-languages.md
+      - 'Properties': properties.md
+      - 'Development': development.md
+theme:
+  logo: img/google-assistant.png
+  name: material
+  hljs_languages:
+    - yaml
+    - rust
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+  icon:
+    annotation: material/plus-circle-outline
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+  language: en
+  palette: 
+    - media: "(prefers-color-scheme: light)"
+      scheme: dark
+      toggle:
+        icon: material/toggle-switch-outline
+        name: Switch to dark mode
+      primary: blue grey
+      accent: purple
+      
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle: 
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: blue grey
+      accent: lime
+markdown_extensions:
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.definition
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.keys
+extra_css:
+  - stylesheets/extra.css 
+copyright: |
+  &copy; 2024 <a href="https://github.com/Avatar-Home-Automation/" target="_blank" rel="noopener">A.V.A.T.A.R</a>
+

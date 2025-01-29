@@ -1,0 +1,16 @@
+{
+  "name": "Avatar Google Assistant",
+  "version": "3.0.0",
+  "type": "module",
+  "description": "Plugin Google assistant for A.V.A.T.A.R",
+  "repository": "https://github.com/Avatar-Home-Automation/A.V.A.T.A.R-plugin-google-assistant",
+  "keywords": [
+    "Google Assistant"
+  ],
+  "author": "Avatar-Home-Automation",
+  "license": "mit",
+  "dependencies": {
+    "google-assistant": "^0.7.0",
+    "stream-buffers": "^3.0.3"
+  }
+}

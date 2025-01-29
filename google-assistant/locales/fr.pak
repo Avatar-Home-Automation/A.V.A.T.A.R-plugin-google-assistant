@@ -1,0 +1,20 @@
+{
+	"error": {
+		"credential": "google-assistant: Le fichier Credentials n'existe pas, consultez la documentation... Sortie.",
+		"token": "google-assistant: Le fichier Tokens n'existe pas, consultez la documentation... Sortie.",
+		"config": "La configuration de l'assistant Google n'existe pas. Impossible de continuer.",
+		"pak": "Aucun pack de langue disponible. Impossible de continuer.",
+		"conversation": "Erreur de conversation: $$",
+		"charCode": "Le demi-codet supérieur n'est pas suivi par un demi-codet inférieur dans fixedCharCodeAt()",
+		"noResponse": "Ouvrez le Plugin Studio et ajoutez une phrase dans la propriété 'noResponse' pour la langue $$",
+		"noAskmeResponse": "Ouvrez le Plugin Studio et ajoutez une phrase dans la propriété 'noAskmeResponse' pour la langue $$",
+		"AskmeResponse": "Ouvrez le Plugin Studio et ajoutez les phrases dans la propriété 'AskmeResponse' pour la langue $$",
+		"noSpeechPlugin": "google-assistant: Ajoutez le plugin qui surclasse le dialogue dans la propriété 'speechPlugin'"
+	},
+	"assistant": {
+		"answer": "Réponse de l'assistant: $$",
+		"continue": "La conversation continue...",
+		"waiting": "Attente de la réponse pendant $$"
+	
+	}
+}
