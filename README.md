@@ -1,10 +1,10 @@
-<div style="display: flex; align-items: center;">
+<p style="display: flex; align-items: center;">
     <img src="./google-assistant/assets/images/google-assistant0.png" alt="Google Assistant Logo" style="width: 60px; margin-right: 15px; margin-top: 10px;">
-    <div>
+    <p style="margin-left: 10px;">
         <h1 style="margin: 0;color: brown;">Google Assistant</h1>
         <h3 style="margin: 0;">Bringing you a world of possibilities at your fingertips</h3>
-    </div>
-</div>
+    </p>
+</p>
 
 Imagine being able to ask any question or control your smart home directly from A.V.A.T.A.R. With this plugin, this vision becomes a reality through the seamless integration of Google Assistant.
 
