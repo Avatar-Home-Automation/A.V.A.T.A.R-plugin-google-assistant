@@ -82,7 +82,7 @@ export async function action(data, callback) {
 			formatSentence (data.action.sentence, (sentence) => {
 				start(data, data.client, sentence, (text, continueConversation) => {
 						if (text) {
-							return Avatar.speak(text, data.client, () => {
+							Avatar.speak(text, data.client, () => {
 								if (!continueConversation) Avatar.Speech.end(data.client);
 							}, false);
 						} else if (!continueConversation) {
@@ -143,29 +143,19 @@ function start (data, client, sentence, callback, audio) {
 			if (continueConversation) {
 				info(Locale.get("assistant.continue"));
 				ConversationNextbyStream (conversation, data, client, callback, audio);
-			} else if (audio === true && onRecord) {
-					isNew = true;
-					conversation.end();
-					onRecord = false;
-					audio = null;
-					playAudio (client, retval => {
-						if (retval)
-							if (callback) callback(null, false);
-						else
-							if (callback) callback(Config.modules['google-assistant'].noResponse[assistantConfig.conversation.lang], false);
-					})
 			} else {
 				if (audio === true && onRecord) {
 					playAudio (client, retval => {
-						if (retval)
+						if (retval) {
 							if (callback) callback(null, false);
-						else
+						} else
 							if (callback) callback(Config.modules['google-assistant'].noResponse[assistantConfig.conversation.lang], false);
 					})
 				} else {
 					// A error message if required...
 					if (callback) callback(Config.modules['google-assistant'].noResponse[assistantConfig.conversation.lang], false);
 				}
+				audio = null;
 				isNew = true;
 				conversation.end();
 				onRecord = false;
