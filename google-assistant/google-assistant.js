@@ -242,7 +242,7 @@ function playAudio (client, callback) {
 		dirname = __dirname;
 	} else {
 		if (Config.modules['google-assistant'].speechPlugin)
-			dirname = Config.modules[Config.modules['google-assistant'].speechPlugin].speech.sharedFolder;
+			dirname = Config.modules[Config.modules['google-assistant'].speechPlugin].platform[process.platform].sharedFolder;
 		else {
 			error (Locale.get("error.noSpeechPlugin"));
 			return callback(false);
